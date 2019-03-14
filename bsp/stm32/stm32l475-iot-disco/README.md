@@ -1,4 +1,4 @@
-# BSP README 模板
+# B-L475E-IOT01A1 开发板 BSP 说明
 
 ## 简介
 
@@ -131,3 +131,4 @@ msh />
 维护人:
 
 -  [zhuangzuoyi]([https://个人主页](https://github.com/zhuangzuoyi/)), 邮箱：<3602551627@qq.com>
+

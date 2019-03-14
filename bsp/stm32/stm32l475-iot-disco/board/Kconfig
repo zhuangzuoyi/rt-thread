@@ -7,6 +7,21 @@ config SOC_STM32L475VG
 
 menu "Onboard Peripheral Drivers"
 
+       config BSP_USING_SSD1306
+        bool "Enable SSD1306 (spi1)"
+        select BSP_USING_SPI
+        select BSP_USING_SPI1
+        default n
+
+    config BSP_USING_SDCARD
+        bool "Enable SDCARD (spi1)"
+        select BSP_USING_SPI
+        select BSP_USING_SPI1
+        select RT_USING_SPI_MSD
+        select RT_USING_DFS
+        select RT_USING_DFS_ELMFAT
+        default n
+        
 endmenu
 
 menu "On-chip Peripheral Drivers"
